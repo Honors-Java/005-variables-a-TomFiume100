@@ -1,3 +1,13 @@
+int color = 1;
+int color2 = 3;
+int color3 = 5;
+int color =  color2 + 100;
+int color2 = color3 + 150;
+int color3 = color - 200;
+int sizeX = 75;
+int sizeY = 400;
+int diamenter = 75;
+
 void setup() {
 	size(500, 500);
 }
@@ -17,7 +27,12 @@ void draw() {
 
   background(255);
   stroke(0);
-  fill(175);
+  fill(color,color2,color3);
+  ellipse(sizeX , sizeX , diamenter , diamenter);
+  ellipse(sizeX , sizeY , diamenter , diamenter);
+  ellipse(sizeY , sizeX , diamenter , diamenter);
+  ellipse(sizeY , sizeY , diamenter , diamenter);
+
 
 
   
